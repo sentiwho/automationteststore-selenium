@@ -1,4 +1,4 @@
-package com.automationteststore;
+package com.automationteststore.base;
 
 import java.time.Duration;
 
@@ -6,6 +6,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.automationteststore.Config;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
