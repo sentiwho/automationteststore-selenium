@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.automationteststore.tests.BasketTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1004 s -- in com.automationteststore.tests.BasketTest

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.automationteststore.tests.CartTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.794 s <<< FAILURE! -- in com.automationteststore.tests.CartTest
+com.automationteststore.tests.CartTest.sampleTest -- Time elapsed: 5.760 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Cart supposed to contain 4 items ==> expected: <4> but was: <[[[[[ChromeDriver: chrome on windows (7e9c1a0a721734f4403b105892c3f5ba)] -> css selector: table.table-bordered]] -> css selector: tr], [[[[ChromeDriver: chrome on windows (7e9c1a0a721734f4403b105892c3f5ba)] -> css selector: table.table-bordered]] -> css selector: tr], [[[[ChromeDriver: chrome on windows (7e9c1a0a721734f4403b105892c3f5ba)] -> css selector: table.table-bordered]] -> css selector: tr], [[[[ChromeDriver: chrome on windows (7e9c1a0a721734f4403b105892c3f5ba)] -> css selector: table.table-bordered]] -> css selector: tr]]>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at com.automationteststore.tests.CartTest.sampleTest(CartTest.java:36)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+

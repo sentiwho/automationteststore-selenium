@@ -11,7 +11,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SeleniumUtils {
 
-    public static void scrollToElementFromList(WebDriver driver, WebElement element) {
+    public static void scrollToElement(){
+        
+    }
+
+    public static void scrollToElement(WebDriver driver, WebElement element) {
         ((JavascriptExecutor) driver).executeScript(
             "arguments[0].scrollIntoView({behavior: 'smooth', block: 'start'})",
             element
