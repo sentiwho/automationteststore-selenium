@@ -7,7 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.automationteststore.Config;
+import com.automationteststore.utils.Config;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 

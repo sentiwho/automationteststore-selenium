@@ -1,4 +1,4 @@
-package com.automationteststore;
+package com.automationteststore.utils;
 
 import java.io.InputStream;
 import java.util.Properties;
