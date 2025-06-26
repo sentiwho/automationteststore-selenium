@@ -16,11 +16,11 @@ public class CartPage {
     public List<WebElement> getCartProductRows() {
         WebElement cartTable = driver.findElement(By.cssSelector("table.table-bordered"));
         List<WebElement> allRows = cartTable.findElements(By.cssSelector("tr"));
-        // Пропускаем заголовок
         return allRows.subList(1, allRows.size());
     }
 
-    public WebElement getCheckoutButton() {
-        return driver.findElement(By.id("cart_checkout1"));
+    public void clickCheckoutButton() {
+       WebElement checkoutButton = driver.findElement(By.id("cart_checkout1"));
+       checkoutButton.click();
     }
 }

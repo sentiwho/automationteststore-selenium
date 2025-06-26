@@ -8,15 +8,17 @@ import org.openqa.selenium.WebElement;
 
 import com.automationteststore.base.BaseTest;
 import com.automationteststore.pageobjects.CartPage;
+import com.automationteststore.pageobjects.LoginPage;
 import com.automationteststore.pageobjects.MainPage;
 import com.automationteststore.utils.SeleniumUtils;
 
-public class CartTest extends BaseTest {
+public class FromMainPageItemsToFullCheckout extends BaseTest {
 
     @Test
     public void addFourProductsToCartAndSuccessCheckout() {
         MainPage mainPage = new MainPage(driver);
         CartPage cartPage = new CartPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
 
         List<WebElement> titles = mainPage.getMainPageTitles();
         List<WebElement> addToCartButtons = mainPage.getAddToCartButtons();
@@ -30,17 +32,21 @@ public class CartTest extends BaseTest {
         SeleniumUtils.clickButtonFromList(driver, addToCartButtons, 5);
 
         SeleniumUtils.scrollToElement(driver, mainPage.getCartButton());
-        mainPage.getCartButton().click();
+        mainPage.getCartButton();
 
         int productsAmount = cartPage.getCartProductRows().size();
         assertEquals(4, productsAmount, "Cart supposed to contain 4 items");
 
-        cartPage.getCheckoutButton().click();
+        cartPage.clickCheckoutButton();
+
+        loginPage.clickGuestCheckoutRadioButton();
+        loginPage.clickContinueButton();
 
         try {
             Thread.sleep(10000);
         } catch (InterruptedException e) {
             e.printStackTrace();
+            System.out.println("THE REASON SLEEP LINE WONT MAKE IT SLEEP");
         }
-    }
+    } 
 }

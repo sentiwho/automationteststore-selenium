@@ -21,6 +21,7 @@ public class MainPage {
         return driver.findElements(By.cssSelector(".fa-cart-plus"));
     }
 
+    // Тут надо оставить геттер кнопки, так как прокручиваем на нее как на элемент в тесте 1
     public WebElement getCartButton() {
         return driver.findElement(By.cssSelector("a[href*='checkout/cart']"));
     }
