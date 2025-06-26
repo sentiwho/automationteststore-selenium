@@ -1,1 +1,8 @@
 com\automationteststore\utils\SeleniumUtils.class
+com\automationteststore\pageobjects\GuestCheckoutPage.class
+com\automationteststore\pageobjects\LoginPage.class
+com\automationteststore\pageobjects\CartPage.class
+com\automationteststore\utils\StateDropDownWorkaround.class
+com\automationteststore\models\BillingInfo.class
+com\automationteststore\utils\Config.class
+com\automationteststore\pageobjects\MainPage.class
