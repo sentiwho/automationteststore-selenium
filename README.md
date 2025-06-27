@@ -3,18 +3,8 @@
 
 Структура проекта  
 
-src  
- ├── main  
- │   └── java  
- │       └── com.automationteststore  
-             ├── models       # Шаблон фейкера  
- │           ├── base         # Базовый класс (beforeeach и aftereach)  
- │           ├── pageobjects  # Page Object`ы  
- │           └── utils        # Утилиты  
- └── test  
-       └── java  
-           └── com.automationteststore  
-               └── tests        # тут тесты  
+![Схема структуры проекта](githubtree.png)  
+
 
 Зависимости находятся в pom.xml  
 Дублирую сюда
