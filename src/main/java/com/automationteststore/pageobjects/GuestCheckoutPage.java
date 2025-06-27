@@ -26,7 +26,6 @@ public class GuestCheckoutPage {
     driver.findElement(By.id("guestFrm_city")).sendKeys(info.getCity());
     driver.findElement(By.id("guestFrm_postcode")).sendKeys(info.getZip());
     
-    // Выбор страны и региона можно сделать через Select
     Select countrySelect = new Select(driver.findElement(By.id("guestFrm_country_id")));
     countrySelect.selectByVisibleText(info.getCountry());
     
