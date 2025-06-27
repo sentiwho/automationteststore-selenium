@@ -19,6 +19,12 @@ public class AddFourProductsAndCompleteGuestCheckout extends BaseTest {
 
     @Test
     public void addFourProductsToCartAndSuccessCheckout() {
+        // try {
+        //     Thread.sleep(2000);
+        // } catch (InterruptedException e) {
+        //     e.printStackTrace();
+        //     System.out.println("THE REASON SLEEP LINE WONT MAKE IT SLEEP1");
+        // }
         MainPage mainPage = new MainPage(driver);
         CartPage cartPage = new CartPage(driver);
         LoginPage loginPage = new LoginPage(driver);
@@ -57,14 +63,5 @@ public class AddFourProductsAndCompleteGuestCheckout extends BaseTest {
         // Селектор такой же как и на странице логина, по этому переиспользую
         loginPage.clickContinueButton();
        guestCheckoutPage.clickConfirmOrderButton();
-
-      
-
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-            System.out.println("THE REASON SLEEP LINE WONT MAKE IT SLEEP");
-        }
     } 
 }
